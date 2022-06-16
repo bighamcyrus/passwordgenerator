@@ -2,10 +2,10 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
-  var LC = "abc"
-  var UC = "ABC"
-  var numeric ="123"
-  var special = "!@#"
+  var LC = "abcdefghijklmnopqrstuvwxyz"
+  var UC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  var numeric ="1234567890"
+  var special = "!@#$%^&*()"
   var potential = ""
   var password = ""
  var passwordLength = prompt("How many characters do you want your password to be? Must be between 8-128 characters.")
@@ -17,8 +17,8 @@ function generatePassword(){
 
  var passwordLC = confirm("Do you want to include lower case letters")
  var passwordUC = confirm("Do you want to include Uppercase?")
- var numericValue = confirm("do you want to include numeric values?")
- var specialcharacters = confirm("do you want to include special characters?")
+ var numericValue = confirm("Do you want to include numeric values?")
+ var specialcharacters = confirm("Do you want to include special characters?")
 
  if (!passwordLC && !passwordUC && !numericValue && !specialcharacters) {
   alert("Must have at least one character type to meet password requirements")

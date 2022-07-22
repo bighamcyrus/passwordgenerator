@@ -10,6 +10,8 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  background: rgb(145, 141, 141);
+  
 }
 
 body {
@@ -27,7 +29,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(0, 0%, 0%);
 }
 
 .card {
@@ -40,8 +42,11 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  background-color: rgb(240, 240, 6);
 }
-
+.page-text{
+  text-align: center;
+}
 .card-header::after {
   content: " ";
   display: block;
